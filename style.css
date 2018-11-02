@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
+  line-height: 25px;
+}
+#map { position:absolute; top:0; bottom:0; width:100%; background-color: #202222; }
+#map1 { position:absolute; top:0; bottom:0; left:0; right:50%; background-color: #202222; }
+#map2 { position:absolute; top:0; bottom:0; left:50%; right:0; background-color: #202222; }
+#toggle {
+  position: absolute;
+  background-image: url('swipe.png');
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 20000;
+  top: 10px;
+  right: 10px;
+  width: 52px;
+  height: 26px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#range {
+  top: 50%;
+  width: 100%;
+  position: absolute;
+}
+input[type=range] {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none; 
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  margin-top: -14px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0;
+}
+h2 {
+  font-size: 35px;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #999;
+  margin-left: -100px;
+  padding-left: 100px;
+  margin-right: -100px;
+  padding-right: 100px;
+  box-shadow: 0px 3px 3px #f5f5f5;
+}
+h3 {
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  color: #084e9d;
+}
+.bold {
+  font-weight: bold;
+}
+.leaflet-bar, .leaflet-control-layers, .leaflet-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#help {
+  margin: 100px;
+  display: none;
+}
+dd {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.button {
+  border-radius: 5px;
+  background: #084e9d;
+  padding: 5px 15px;
+}
+  .button:hover {
+    background: #0a66ce;
+  }
+a.button {
+  color: #fff;
+}
+
+#forkme {
+  float: right;
+}
+
+@media (max-width: 700px) {
+  #help {
+    margin: 100px 10px 10px 10px;
+  }
+  h2 {
+    margin-left:  -10px;
+    padding-left:  10px;
+    margin-right: -10px;
+    padding-right: 10px;
+  }
+  #forkme {
+    display: none;
+  }
+}
