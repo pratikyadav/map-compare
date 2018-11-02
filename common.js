@@ -30,8 +30,8 @@ var addLayer = function(layerid, map) {
             layer = new L.Yandex();
             break;
         case 'osm':
-            map.attributionControl.addAttribution('<a href="http://openstreetmap.org/copyright">&copy; OpenStreetMap contributors</a>');
-            layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+            map.attributionControl.addAttribution('<a href="https://openstreetmap.org/copyright">&copy; OpenStreetMap contributors</a>');
+            layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
             break;
         default:
             if (layerid.indexOf('http') === 0) {

@@ -12,8 +12,8 @@
             var elements = document.getElementsByTagName('dd');
             for (var i = 0; i < elements.length; i++) {
                 elements[i].innerHTML = elements[i].innerHTML.replace(
-                    /http:\/\/lxbarth.com\/compare\/swipe\//g,
-                    'http:\/\/lxbarth.com\/compare\/');
+                    /https:\/\/lxbarth.com\/compare\/swipe\//g,
+                    'https:\/\/lxbarth.com\/compare\/');
             }
             return false;
         };
@@ -45,7 +45,7 @@
 
     // quiet is a cheap and dirty way of avoiding a problem in which one map
     // syncing to another leads to the other map syncing to it, and so on
-    // ad infinitum. this says that while we are calling sync, do not try to 
+    // ad infinitum. this says that while we are calling sync, do not try to
     // loop again and sync other maps
     var quiet = false;
     function follow(e) {
