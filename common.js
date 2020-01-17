@@ -9,7 +9,7 @@ L.Google.prototype.getContainer = function() {
     return this._container;
 };
 
-L.mapbox.accessToken = 'pk.eyJ1IjoicHJhdGlreWFkYXYiLCJhIjoiMTA2YWUxNjRkNmFmZGQ4YzAxZWFiNDk0NDM1YjE1YjAifQ.4P6N5dNmA_WQXd3BsJvu5w';
+L.mapbox.accessToken = 'pk.eyJ1IjoicHJhdGlreWFkYXYiLCJhIjoiY2pocHcxYTNxMWRpdTM3cWp5dHZtM2d6bCJ9.iPF7EN0N_BUbdwQ04t_HSw';
 
 var addLayer = function(layerid, map) {
     var split = layerid.split('.');
