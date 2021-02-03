@@ -1,3 +1,3 @@
 # Compare maps
 
-Go: http://lxbarth.com/compare/
+Go: https://pratikyadav.github.io/map-compare/
